@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="htpps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Resume</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');  
+        
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background-color: #050722;
+    color: #fff;
+    position: relative;
+}
+header{
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.logo{
+    color:#fff;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+}
+.logo::first-letter{
+    color: #297cf0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover, .active{
+    color: #297cf0;
+}
+tr
+{
+    text-align: center;
+} 
+table,th,td{
+                border: 2px solid white;
+                border-collapse:collapse;
+               
+            } 
+         
+.tb{
+   margin-top: 15%;
+   margin-left: 10%;
+   
+   
+}
+th,td{
+    width: 300px;
+    height:50px;
+    transition: 0.9s;
+}
+.odd:hover{
+    background-color: #297cf0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    
+}
+th:hover{
+    color: #050722;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+   
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Satyadev M Murugesan</a>
+        <nav>
+            <ul>
+                <li> <a href="index.html" >Home</a></li>
+                <li> <a href="qualification.html" class="active">Qualifications</a></li>
+                <li> <a href="project.html">Projects</a></li>
+                <li> <a href="internship.html">Internship</a></li>
+                <li> <a href="skill.html">Skills</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div  class="qual">
+            <table class="tb" rule="row" cellpadding="10" cellspacing="10">
+                <tr>
+                    <td colspan="4"><strong>EDUCATIONAL QUALIFICATION</strong></td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>COURSE</th>
+                    <th>NAME OF THE INSTITUTE</th>
+                    <th>YEAR OF PASSING</th>
+                    <th>PERCENTAGE</th>
+                </tr>
+                <tr class="odd">
+                    <td>BCA(Bachelor of Computer Application)</td>
+                  <td>Ayya Nadar Janaki Ammal College-Sivakasi</td> 
+                  <td>2020-2023</td> 
+                  <td>CGPA 80.15</td>
+                </tr>
+                <tr class="odd">
+                  <td>HSC</td>
+                  <td>G.S.Hindu.Higher Secondary School</td> 
+                  <td>2019-2020</td> 
+                  <td>65%</td>
+                </tr>
+                <tr class="odd">
+                    <td>SSLC</td>
+                    <td>G.S.Hindu.Higher Secondary School</td> 
+                    <td>2017-2018</td> 
+                    <td>82.2%</td>
+                  </tr>
+            </table>
+        </div>
+    </section>
+    
+</body>
+</html>

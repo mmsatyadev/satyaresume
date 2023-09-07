@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="htpps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background-color: #050722;
+    color: #fff;
+    position: relative;
+}
+header{
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.logo{
+    color:#fff;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+}
+.logo::first-letter{
+    color: #297cf0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover, .active{
+    color: #297cf0;
+}
+
+.maincontainer{
+            position: relative;
+            width: 600px;
+            height:350px;
+            margin-top:10%;
+            margin-left:420px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-color:#050722;
+           
+        }
+        .thecard{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+            background-color:#fff;
+            border-radius: 20px;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue;
+            box-shadow: 1px 1px 2px black, 0 0 25px blue;
+            
+        }
+        .thecard:hover{
+           
+            transform: rotateY(180deg);
+           
+        }
+        .thefront{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #fff;
+            color: #050722;
+            text-align: center;
+            font-family:'zilla slab',sans-serif ;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+           padding-top:130px;
+           text-shadow: 1px 1px 2px black, 0 0 25px blue;
+           cursor: pointer;
+        }
+        .theback{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background:#050722;
+            color:#fff;
+            font-family:'Times New Roman', Times, serif ;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 18px;
+            transform: rotateY(180deg);
+            padding-top: 100px;
+            cursor: pointer;
+        }
+
+        .head{
+            color:#297cf0;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Satyadev M Murugesan</a>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="qualification.html">Qualifications</a></li>
+                <li> <a href="project.html">Projects</a></li>
+                <li> <a href="internship.html" class="active">Internship</a></li>
+                <li> <a href="skill.html">Skills</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="maincontainer">
+        <div class="thecard">
+            <div class="thefront">
+                <h1>INTERNSHIP</h1>
+               
+            </div>
+            
+            <div class="theback">
+                <h2 class="head">COMPANY NAME</h2>
+                    <h2>GOLDEN LOTUS MEDIA SOLUTION </h2>
+                    <h3>(21-06-2022 to 08-07-2022)</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
